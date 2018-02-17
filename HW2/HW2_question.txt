@@ -1,0 +1,23 @@
+In this assignment, you will perform experiments with defect predictors. You should evaluate with the following options for predictors:
+
+1. LOC: the number of lines of code, i.e. the simplest code metric
+
+2. NBF: the number of bugs found previously, i.e. the simplest bug metric
+
+3. NOV: the number of versions of the source file, i.e. the simplest change metric
+
+4. The single code metric (and change metric) that have highest correlation (which you have discovered in Assignment 1)
+
+5. All code metrics
+
+6. All change metrics
+
+7. All available metrics
+
+If you use multiple metrics (in the last three cases), you will perform with two options:
+
+8. Use all metrics
+
+9. Perform PCA for all metrics and only choose the first k principal components with cumulative variances of at least 90%.
+
+You need to perform experiments for all five datasets and use both "mean absolute error" (MAE) and "ranked correlation" (RCOR) as measures of prediction performance. 

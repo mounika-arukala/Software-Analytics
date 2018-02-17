@@ -1,0 +1,15 @@
+In this quizz, you will perform effort estimation with linear regression. Effort estimation is the task to estimate/predict the total development effort (e.g. total working hours) spent for a software project.
+
+You could do this quizz at class or anywhere but need to submit the report on time. All the work need to be done individually. Highly similar submissions are considered cheating!!!
+
+The dataset used for this quizz is in file effort.csv uploaded on Canvas. It has three variables: Hour (the total working hours spent to develop the project), File (the total number of source code files), and Change (the total number of code commits made).
+
+In practice, we can know the number of files before starting development (e.g. from class design). However, we can't measure the number code commits until the development phrase finishes. Therefore, we should consider File as the predictor and Change and Hour as the dependent variables.
+
+1. Explain why we could hypothesize that File could be used to predict Change and Hour. Use correlation analysis to validate this hypothesis.
+
+2. Analyze the linear regression models predicting Change and Hour using File as a single predictor. What model has better goodness of fit (i.e. higher R2)?
+
+3. Run cross-validation with each model. Report the mean absolute errors as the prediction accuracy. When running cross-validation, you should set the random seed with your A number. For example, if your Anumber is A1234, you call set.seed(1234)
+
+4. In addition to File, what other factors could we use for effort prediction: programming language, team size, type of software (e.g. web app, mobile app, desktop app, embedded systems, operating system...) Explain why such a factor has the predictive power?

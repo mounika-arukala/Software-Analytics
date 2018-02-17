@@ -1,0 +1,9 @@
+You could do this quizz at class or anywhere but need to submit the report on time. All the work need to be done individually. Highly similar submissions are considered cheating!!!
+
+1. The dataset used for this quizz is in file JDT.csv uploaded on Canvas. It has four variables: bug (number of post-release bugs, dependent variable), loc (number of lines of code, predictor), bugfound (number of bug found previously), and version (number of versions)
+
+2. Analyze the linear regression models predicting bug with each single predictor. What predictor provides the best goodness of fit (i.e. highest R2)?
+
+3. Run cross-validation with each predictor. What predictor provides the best prediction, i.e., smallest mean absolute errors (MAE). When running cross-validation, you should set the random seed with your A number. For example, if your Anumber is A1234, you call set.seed(1234)
+
+4. Does using all three predictor provide better performance than using each single predictor? To predict with those three predictors, you can use the formula: bug ~ loc + bugfound + verision. You should compare both R2 and MAE.

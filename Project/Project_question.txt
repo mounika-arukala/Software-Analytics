@@ -1,0 +1,16 @@
+Problem
+1. Predict if a review is useful or noisy
+2. Estimate review ratings from review contents and detect inconsistent/spamming review
+
+Data collection
+- Select 3+ apps of different categories
+- Manually label 100+ positive and 100+ negative reviews for each app
+
+Note
+- Students should not collect the same apps and the same reviews
+- Sample reviews: useal.cs.usu.edu/mark/launcher.jsp
+
+Submission
+- Dataset
+- Code
+- Report (written as a 4-page conference paper)

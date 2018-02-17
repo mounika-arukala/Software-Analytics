@@ -1,0 +1,23 @@
+In this assignment, you will perform data analyses on defect data.You should write a report for your analysis using IEEE format journal format (can be edited online at http://www.overleaf.com) and submit on Canvas as a pdf file (of at most 4 pages). You should also submit R scripts (or .Rhistory files) for the analysis you use in this project.
+
+Dataset
+Five datasets for this project are provided in the shared folder:(jdt.zip, equinox.zip, lucene.zip, mylyn.zip, and pde.zip). Each dataset (compressed) contains several csv files. You will perform analysis on three files described below.
+
+single-version-ck-oo.csv contains (static) code metrics for all source files. For example, "numberOfLinesOfCode" is the file size in term of lines of code.
+
+change-metrics.csv contains metrics for change histories of all source files. For example, "linesAddedUntil" is the total number of lines of code added to this file.
+
+bug-metrics.csv contains metrics for bug histories of all source files. For example, "numberOfBugsFoundUntil" is the total number of bugs found in this file.
+
+Each file contains the number of post-release defects in column "bugs" and the similar bug counts for sub-categories. For example, "highPriorityBugs" is the number of post-release defects that are marked as "high priority" ones.
+
+You could refer to the paper "An Extensive Comparison of Bug Prediction Approaches" and its related work for more information about those metrics (e.g. how they are collected and computed).
+
+Research questions
+You should perform data analysis and machine learning to answer the following research questions for the provided datasets.
+
+a. What metrics have the best correlation to defects?
+
+The typical approach for this question is to compute the linear (i.e. Pearson) and ranked (i.e. Spearman) correlations of each metric to the number of post-release defects (provided in column "bugs") and compare them. However, because the performance of a metric might vary between systems (e.g. LOC might have higher correlation than WMC in JDT, and lower in PDE), you should verify your conclusion by computing and comparing the average correlation for each metric on all five systems. Paired t-tests can provide a stronger evidence.
+
+You should identify the best metric for each file single-version-ck-oo.csv, change-metrics.csv, and bug-metrics.csv.

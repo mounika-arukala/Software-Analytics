@@ -1,0 +1,5 @@
+Running experiments on 5 datasets with topic-based metrics (in sub-folder Data/Defect/topic) to show that topic metrics provide better prediction accuracy than code size metric (LOC):
+
+1. You should use linear regression model, run cross-validation, and compute the prediction accuracy in term of ranked correlation between predicted and actual number of post-release defects.
+
+2. You should run experiments on 5 and 10 topics for each dataset.
